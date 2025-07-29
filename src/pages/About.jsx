@@ -14,38 +14,60 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0c0c0c] text-black dark:text-white px-6 md:px-20 py-24 relative font-sans">
 
-      {/* SEO Meta Tags */}
+      {/* SEO + AEO Meta Tags */}
       <Helmet>
-        <title>Who is Gaurab.exe? | Hardware Hacker, Web Developer & Malware Expert</title>
+        {/* Basic SEO */}
+        <title>Gaurab.exe | Nepali Hardware Hacker & Cybersecurity Expert</title>
         <meta
           name="description"
-          content="Discover Gaurab Budha aka gaurab.exe – a passionate hardware hacker, innovative web developer, and expert malware researcher from Nepal. Explore his journey, skills, and projects."
+          content="Meet Gaurab Budha aka gaurab.exe — a hardware hacker, web developer, and ethical malware researcher from Nepal. Dive into his tech journey and skills."
         />
         <meta
           name="keywords"
-          content="gaurab.exe, gaurab budha, hardware hacker, web developer, malware developer, nepali hacker, cybersecurity, malware research, full-stack developer, hacker portfolio"
+          content="gaurab.exe, gaurab budha, nepali hacker, ethical hacking, hardware hacker, malware developer, full-stack developer, react developer, cybersecurity expert"
         />
         <meta name="author" content="Gaurab Budha" />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/about" />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Who is Gaurab.exe? | The Tech Rebel" />
-        <meta
-          property="og:description"
-          content="Explore the world of Gaurab Budha, a hardware hacker, malware expert, and full-stack web developer. Learn how he innovates and hacks with purpose."
-        />
-        <meta property="og:type" content="website" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Gaurab.exe | Nepali Hardware Hacker & Malware Dev" />
+        <meta property="og:description" content="Explore the mind of Gaurab Budha — an expert in hardware hacking, full-stack web dev, and ethical malware research." />
+        <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://yourdomain.com/about" />
         <meta property="og:image" content="https://yourdomain.com/images/gaurab-exe-og.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Who is Gaurab.exe? | The Tech Rebel" />
-        <meta
-          name="twitter:description"
-          content="Get to know Gaurab Budha, the hardware hacker, malware dev, and web developer from Nepal, building the future of tech."
-        />
+        <meta name="twitter:title" content="Gaurab.exe | Nepali Hardware Hacker & Malware Dev" />
+        <meta name="twitter:description" content="Meet the full-stack dev and malware researcher shaking up tech from Nepal." />
         <meta name="twitter:image" content="https://yourdomain.com/images/gaurab-exe-og.jpg" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Gaurab Budha",
+            "alternateName": "gaurab.exe",
+            "url": "https://yourdomain.com/about",
+            "image": "https://yourdomain.com/images/gaurab-exe-og.jpg",
+            "sameAs": [
+              "https://github.com/gaurabexe",
+              "https://twitter.com/gaurabexe",
+              "https://linkedin.com/in/gaurabexe"
+            ],
+            "jobTitle": "Hardware Hacker, Malware Developer, Full-Stack Web Developer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelance"
+            },
+            "alumniOf": "Badimalika Secondary School",
+            "description": "Gaurab Budha aka gaurab.exe is a hardware hacker, full-stack developer, and ethical malware researcher from Nepal."
+          }
+          `}
+        </script>
       </Helmet>
 
       <div className="max-w-4xl mx-auto">
@@ -55,9 +77,9 @@ const About = () => {
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
           I am <span className="font-bold">Gaurab Budha</span>, better known in the digital underground as <span className="bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded inline-flex items-center gap-2">
-          gaurab.exe <Copy size={16} onClick={handleCopy} className="cursor-pointer hover:text-blue-600 transition" />
-          {copied && <span className="text-sm text-green-500">Copied!</span>}
-        </span>.
+            gaurab.exe <Copy size={16} onClick={handleCopy} className="cursor-pointer hover:text-blue-600 transition" />
+            {copied && <span className="text-sm text-green-500">Copied!</span>}
+          </span>.
         </p>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
@@ -94,6 +116,18 @@ const About = () => {
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
           Over the years, I’ve worked on several exciting projects that merge hardware and software innovation. From building AI-powered tools to developing custom firmware and security tools, my work reflects a commitment to pushing limits and creating meaningful tech.
         </p>
+
+        <h2 className="text-2xl font-bold mt-12 mb-4">FAQ</h2>
+        <ul className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+          <li>
+            <strong>Who is Gaurab.exe?</strong><br />
+            Gaurab Budha, known as gaurab.exe, is a Nepali hardware hacker, web developer, and malware researcher known for pushing the limits of tech.
+          </li>
+          <li>
+            <strong>What does Gaurab specialize in?</strong><br />
+            He specializes in embedded systems, full-stack development, and ethical malware engineering.
+          </li>
+        </ul>
       </div>
     </div>
   );

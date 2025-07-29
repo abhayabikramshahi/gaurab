@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap:https://gaurabudha.netlify.app/sitemap.xml
