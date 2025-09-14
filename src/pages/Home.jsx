@@ -1,12 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Hero from "../assets/hero.jpg";
 
 const Home = () => {
   return (
     <div className="pt-24 px-6 md:px-10 min-h-screen bg-black text-white font-sans">
+      {/* ✅ SEO META TAGS */}
+      <Helmet>
+        <title>Gaurab Budha | Hardware Hacker & Developer</title>
+        <meta
+          name="description"
+          content="I’m Gaurab Budha — a Hardware Hacker, Computer Science major & Class 11 Biology student. Passionate about AI, UI/UX, and sleek digital experiences."
+        />
+        <meta
+          name="keywords"
+          content="Gaurab Budha, Hardware Hacker, AI Developer, UI/UX, SEO, AEO, Computer Science, Class 11 Biology"
+        />
+        <meta name="author" content="Gaurab Budha" />
+
+        {/* ✅ Open Graph for social sharing */}
+        <meta property="og:title" content="Gaurab Budha | Hardware Hacker & Developer" />
+        <meta
+          property="og:description"
+          content="Passionate about AI, Hardware Hacking, and creative digital builds. Explore projects & Gaurab AI!"
+        />
+        <meta property="og:image" content={Hero} />
+        <meta property="og:url" content="https://your-domain.com" />
+        <meta property="og:type" content="website" />
+
+        {/* ✅ Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gaurab Budha | Hardware Hacker & Developer" />
+        <meta
+          name="twitter:description"
+          content="From AI to sleek UI/UX, I build optimized, creative digital experiences."
+        />
+        <meta name="twitter:image" content={Hero} />
+
+        {/* ✅ AEO (Structured Data - JSON-LD) */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Gaurab Budha",
+            "url": "https://your-domain.com",
+            "image": "${Hero}",
+            "jobTitle": "Hardware Hacker & Computer Science Student",
+            "description": "I’m a Hardware Hacker, Computer Science major & Class 11 Biology student. Passionate about AI, UI/UX, and sleek digital builds.",
+            "sameAs": [
+              "https://github.com/gaurab", 
+              "https://linkedin.com/in/gaurab",
+              "https://twitter.com/gaurab"
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
+
       <section className="max-w-6xl mx-auto">
-        {/* Top Hero Section */}
+        {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Left Text */}
           <div className="flex flex-col items-start space-y-6 max-w-2xl">
