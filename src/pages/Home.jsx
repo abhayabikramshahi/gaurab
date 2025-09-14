@@ -26,7 +26,7 @@ const Home = () => {
           content="Passionate about AI, Hardware Hacking, and creative digital builds. Explore projects & Gaurab AI!"
         />
         <meta property="og:image" content={Hero} />
-        <meta property="og:url" content="https://your-domain.com" />
+        <meta property="og:url" content="https://gaurabudha.netlify.app/" />
         <meta property="og:type" content="website" />
 
         {/* ✅ Twitter Card */}
@@ -45,7 +45,7 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Gaurab Budha",
-            "url": "https://your-domain.com",
+            "url": "https://gaurabudha.netlify.app/",
             "image": "${Hero}",
             "jobTitle": "Hardware Hacker & Computer Science Student",
             "description": "I’m a Hardware Hacker, Computer Science major & Class 11 Biology student. Passionate about AI, UI/UX, and sleek digital builds.",
