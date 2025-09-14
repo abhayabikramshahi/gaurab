@@ -13,6 +13,7 @@ import GaurabAi from './pages/Gaurab-Ai';
 import PasswordChecker from './pages/Password';
 import Html from './pages/Html';
 import Css from './pages/Css';
+import PageNotFound from './pages/PageNotFound';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/password-checker" element={<PasswordChecker />} />
         <Route path="/html-generator" element={<Html />} />
         <Route path="/css-generator" element={<Css />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );

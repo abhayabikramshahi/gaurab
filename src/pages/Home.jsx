@@ -19,8 +19,14 @@ const Home = () => {
         />
         <meta name="author" content="Gaurab Budha" />
 
+        {/* ✅ Canonical URL */}
+        <link rel="canonical" href="https://gaurabudha.netlify.app/" />
+
         {/* ✅ Open Graph for social sharing */}
-        <meta property="og:title" content="Gaurab Budha | Hardware Hacker & Developer" />
+        <meta
+          property="og:title"
+          content="Gaurab Budha | Hardware Hacker & Developer"
+        />
         <meta
           property="og:description"
           content="Passionate about AI, Hardware Hacking, and creative digital builds. Explore projects & Gaurab AI!"
@@ -31,7 +37,10 @@ const Home = () => {
 
         {/* ✅ Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Gaurab Budha | Hardware Hacker & Developer" />
+        <meta
+          name="twitter:title"
+          content="Gaurab Budha | Hardware Hacker & Developer"
+        />
         <meta
           name="twitter:description"
           content="From AI to sleek UI/UX, I build optimized, creative digital experiences."
@@ -70,8 +79,8 @@ const Home = () => {
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               I’m a <span className="text-white font-medium">Hardware Hacker</span>, 
-              <span className="text-white font-medium"> Computer Science major</span>,
-              and a Class 11 student studying <span className="text-white font-medium">Biology</span>.
+              <span className="text-white font-medium"> Computer Science major</span>, 
+              and a Class 11 student studying <span className="text-white font-medium">Biology</span>. 
               Passionate about building sleek, optimized, and creative digital experiences.
             </p>
 
@@ -108,8 +117,13 @@ const Home = () => {
 
         {/* Coming Soon Section */}
         <section className="mt-24">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white">🔥 Featured Projects Coming Soon</h2>
-          <p className="text-gray-400 mt-2">Stay tuned for some exciting drops — Gaurab is cooking up some powerful tools and projects!</p>
+          <h2 className="text-2xl md:text-3xl font-semibold text-white">
+            🔥 Featured Projects Coming Soon
+          </h2>
+          <p className="text-gray-400 mt-2">
+            Stay tuned for some exciting drops — Gaurab is cooking up some
+            powerful tools and projects!
+          </p>
           <p className="mt-4 italic text-gray-500">More to come...</p>
         </section>
       </section>
